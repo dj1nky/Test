@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "🔍 Running ESLint checks before push..."
+npm run lint:check
+if [ $? -ne 0 ]; then
+  echo "❌ Push blocked: Please fix ESLint errors above before pushing."
+  echo "💡 Run 'npm run lint' to auto-fix issues, or fix manually."
+  exit 1
+fi
+echo "✅ ESLint checks passed!"
