@@ -22,7 +22,10 @@ if (!latest) {
 
 console.log(`Installing design system ${latest}`);
 // Remove the installed copy so any local edits inside node_modules are discarded.
-rmSync("node_modules/unbloched-design-system", { recursive: true, force: true });
+rmSync("node_modules/unbloched-design-system", {
+  recursive: true,
+  force: true,
+});
 execSync(`npm install unbloched-design-system@github:${repo}#${latest}`, {
   stdio: "inherit",
 });
