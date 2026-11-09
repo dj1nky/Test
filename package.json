@@ -6,6 +6,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "update-ds": "node scripts/update-design-system.mjs",
+    "ds:local": "node scripts/link-design-system.mjs",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
@@ -16,7 +17,7 @@
   },
   "dependencies": {
     "nuxt": "^3.16.0",
-    "unbloched-design-system": "github:dj1nky/unBloched-Vue-Template#v1.0.15",
+    "unbloched-design-system": "github:dj1nky/unBloched-Vue-Template#v1.0.16",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
