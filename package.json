@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "nuxt": "^3.16.0",
-    "unbloched-design-system": "github:dj1nky/unBloched-Vue-Template#v1.0.17",
+    "unbloched-design-system": "github:dj1nky/unBloched-Vue-Template#v1.0.18",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

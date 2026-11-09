@@ -1,5 +1,6 @@
 // Pulls the newest design system release: npm run update-ds
 import { execSync } from "node:child_process";
+import { rmSync } from "node:fs";
 
 const repo = "dj1nky/unBloched-Vue-Template";
 const tags = execSync(`git ls-remote --tags https://github.com/${repo}.git`, {
@@ -20,6 +21,8 @@ if (!latest) {
 }
 
 console.log(`Installing design system ${latest}`);
+// Remove the installed copy so any local edits inside node_modules are discarded.
+rmSync("node_modules/unbloched-design-system", { recursive: true, force: true });
 execSync(`npm install unbloched-design-system@github:${repo}#${latest}`, {
   stdio: "inherit",
 });
