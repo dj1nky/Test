@@ -12,11 +12,14 @@
     "format": "prettier . --write",
     "lint": "eslint --fix --ext .js,.vue .",
     "lint:check": "eslint --ext .js,.vue .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "check-ds": "node scripts/check-design-system.mjs",
+    "predev": "npm run check-ds",
+    "prebuild": "npm run check-ds"
   },
   "dependencies": {
     "nuxt": "^3.16.0",
-    "unbloched-design-system": "github:dj1nky/vue-nuxt-design-system#v1.0.20",
+    "unbloched-design-system": "github:dj1nky/vue-nuxt-design-system#v1.0.21",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },

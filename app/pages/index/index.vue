@@ -13,7 +13,7 @@ import { NuxtLink, UiButton, UiDiv, UiIcon } from "#components";
     <ui-button
       variant="primary"
       class="w-fit"
-      size="large"
+      size="lg"
       :link="'/design-system'"
     >
       Go to Design System
