@@ -2,7 +2,7 @@
 import { execSync } from "node:child_process";
 import { rmSync } from "node:fs";
 
-const repo = "dj1nky/unBloched-Vue-Template";
+const repo = "dj1nky/vue-nuxt-design-system";
 const tags = execSync(`git ls-remote --tags https://github.com/${repo}.git`, {
   encoding: "utf8",
 })
